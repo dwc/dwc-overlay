@@ -1,0 +1,16 @@
+If you are using Apache, consider adding something like this to your server
+configuration:
+
+SetEnv W3C_VALIDATOR_CFG ${VHOST_ROOT}/${PN}/config/validator.conf
+ScriptAlias /${PN}/check ${VHOST_CGIBINDIR}/${PN}/check
+ScriptAliasMatch /${PN}/feedback(\.html)? ${VHOST_CGIBINDIR}/${PN}/sendfeedback.pl
+
+<Directory ${VHOST_HTDOCSDIR}/${PN}>
+    Options IncludesNoExec Indexes MultiViews
+    AllowOverride None
+    AddHandler server-parsed .html
+    AddCharset utf-8 .html
+</Directory>
+
+Before using ${PN}, be sure to configure it.
+* Edit ${VHOST_ROOT}/${PN}/config/validator.conf

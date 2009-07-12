@@ -1,0 +1,13 @@
+--- build.xml.orig	2008-06-30 17:23:10.000000000 -0400
++++ build.xml	2008-06-30 17:23:36.000000000 -0400
+@@ -75,9 +75,7 @@
+ 
+   <!-- extra library jar -->
+   <path id="build.classpath">
+-    <pathelement path="classes/sax.jar"/>
+-    <pathelement path="classes/xp.jar"/>
+-    <pathelement path="classes/servlet.jar"/>
++    <pathelement path="${gentoo.tools.jar}"/>
+     <pathelement path="${build.core.classes}"/>
+   </path>
+ 
