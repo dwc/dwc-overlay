@@ -1,0 +1,8 @@
+/var/log/dsmerror.log /var/log/dsmsched.log /var/log/dsmwebcl.log {
+  missingok
+  notifempty
+  sharedscripts
+  postrotate
+    /etc/init.d/dsmc restart > /dev/null 2>&1 || true
+  endscript
+}

@@ -1,0 +1,20 @@
+#!/sbin/runscript
+
+depend() {
+	use net
+}
+
+start() {
+	ebegin "Starting dsmcad (client acceptor daemon)"
+	cd "${DSM_LOG}"
+	start-stop-daemon --start --background --nicelevel 15 \
+		--exec /opt/tivoli/tsm/client/ba/bin/dsmcad
+	eend $?
+}
+
+stop() {
+	ebegin "Stopping dsmcad"
+	start-stop-daemon --stop \
+		--exec /opt/tivoli/tsm/client/ba/bin/dsmcad
+	eend $?
+}

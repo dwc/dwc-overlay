@@ -1,0 +1,16 @@
+exclude.dir /dev
+exclude.dir /lib/udev/devices
+exclude.dir /mnt
+exclude.dir /proc
+exclude.dir /sys
+exclude.dir /tmp
+exclude.dir /usr/local/overlays
+exclude.dir /usr/portage
+exclude.dir /var/cache
+exclude.dir /var/lock
+exclude.dir /var/run
+exclude.dir /var/tmp
+
+exclude /var/log/dsmsched.log
+exclude /var/log/faillog
+exclude /var/log/lastlog

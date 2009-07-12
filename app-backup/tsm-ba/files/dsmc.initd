@@ -1,0 +1,24 @@
+#!/sbin/runscript
+
+depend() {
+	use net
+}
+
+start() {
+	ebegin "Starting dsmc"
+	cd "${DSM_LOG}"
+	start-stop-daemon --start --background --nicelevel 15 \
+		--make-pidfile --pidfile /var/run/dsmc.pid \
+		--exec /opt/tivoli/tsm/client/ba/bin/dsmc sched ${DSMC_OPTS}
+	eend $?
+}
+
+stop() {
+	# For whatever reason SIGTERM doesn't affect the dsmc process,
+	# but SIGHUP makes it exit cleanly
+	ebegin "Stopping dsmc"
+	start-stop-daemon --stop \
+		--signal 1 \
+		--pidfile /var/run/dsmc.pid
+	eend $?
+}
