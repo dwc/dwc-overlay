@@ -1,6 +1,8 @@
-# Copyright Daniel Westermann-Clark <daniel at acceleration dot net>
+# Copyright 1999-2009 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header$
+# $Header: $
+
+EAPI=2
 
 inherit eutils java-pkg-2 java-ant-2
 
@@ -13,8 +15,7 @@ SRC_URI="http://files.danieltwc.com/${P}.tar.bz2"
 LICENSE="W3C"
 
 SLOT="0"
-KEYWORDS="amd64 x86"
-RESTRICT="nomirror"
+KEYWORDS="~amd64 ~x86"
 
 IUSE="doc"
 COMMON_DEPENDENCIES="dev-java/servletapi:2.3
@@ -32,10 +33,7 @@ RDEPEND=">=virtual/jre-1.5
 EANT_GENTOO_CLASSPATH="servletapi-2.3,jigsaw,xerces-2,tagsoup,velocity,commons-lang-2.1,commons-collections"
 EANT_BUILD_TARGET="jar war"
 
-src_unpack() {
-	unpack "${A}"
-	cd "${S}"
-
+src_prepare() {
 	epatch "${FILESDIR}/${PN}-fix-resource-urls.patch"
 
 	# Link in JAR files for the WEB-INF/lib in the WAR file
