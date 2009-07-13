@@ -1,0 +1,10 @@
+# ChangeLog for dev-perl/DBD-DB2
+# Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*DBD-DB2-1.71 (13 Jul 2009)
+
+  13 Jul 2009; Daniel Westermann-Clark <dwc@pobox.com> +DBD-DB2-1.71.ebuild,
+  +metadata.xml:
+  Add latest DBD::DB2
+
