@@ -1,27 +1,28 @@
-# Copyright 1999-2006 Gentoo Foundation
+# Copyright 1999-2009 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header$
+# $Header: $
 
 EAPI=2
 
+MODULE_AUTHOR=CLKAO
 inherit eutils perl-module bash-completion
 
 MY_PV="v${PV}"
 MY_P="${PN/svk/SVK}-${MY_PV}"
 S="${WORKDIR}/${MY_P}"
+SRC_URI="mirror://cpan/authors/id/C/CL/CLKAO/${MY_P}.tar.gz"
 
 DESCRIPTION="A decentralized version control system"
-SRC_URI="mirror://cpan/authors/id/C/CL/CLKAO/${MY_P}.tar.gz"
 HOMEPAGE="http://svk.bestpractical.com/"
 
 SLOT="0"
 LICENSE="|| ( Artistic GPL-2 )"
-KEYWORDS="~amd64 ~ia64 ~ppc ~sparc ~x86"
-IUSE="nls pager patch log4p crypt test bash-completion"
-RESTRICT="mirror"
+KEYWORDS="~amd64 ~x86"
+IUSE="nls crypt test bash-completion"
+#SRC_TEST="do"
 
-RDEPEND=">=dev-lang/perl-5.8.7
-	>=dev-util/subversion-1.3.0[perl]
+RDEPEND=">=dev-util/subversion-1.3.0[perl]
+	<dev-util/subversion-1.6
 	>=virtual/perl-version-0.68
 	dev-perl/Algorithm-Annotate
 	>=dev-perl/Algorithm-Diff-1.1901
@@ -50,15 +51,13 @@ RDEPEND=">=dev-lang/perl-5.8.7
 	dev-perl/Time-Progress
 	dev-perl/TimeDate
 	>=dev-perl/SVN-Mirror-0.71
+	dev-perl/IO-Pager
+	dev-perl/Log-Log4perl
+	virtual/perl-Compress-Zlib
+	dev-perl/FreezeThaw
 	nls? (
 		>=dev-perl/locale-maketext-lexicon-0.62
 		>=virtual/perl-Locale-Maketext-Simple-0.16
-	)
-	pager? ( dev-perl/IO-Pager )
-	log4p? ( dev-perl/Log-Log4Perl )
-	patch? (
-		virtual/perl-Compress-Zlib
-		dev-perl/FreezeThaw
 	)
 	crypt? ( app-crypt/gnupg )"
 DEPEND="${RDEPEND}

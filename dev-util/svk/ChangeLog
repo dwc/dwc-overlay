@@ -1,0 +1,8 @@
+# ChangeLog for dev-util/svk
+# Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+  13 Jul 2009; Daniel Westermann-Clark <dwc@pobox.com> svk-2.2.1.ebuild,
+  +metadata.xml:
+  Clean up dev-util/svk ebuild
+
