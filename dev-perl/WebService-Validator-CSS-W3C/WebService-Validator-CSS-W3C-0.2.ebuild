@@ -1,21 +1,23 @@
-# Copyright Daniel Westermann-Clark <daniel at acceleration dot net>
+# Copyright 1999-2009 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header$
+# $Header: $
 
+EAPI=2
+
+MODULE_AUTHOR=OLIVIERT
 inherit perl-module
 
-DESCRIPTION="Interface to the W3C CSS Validator"
-HOMEPAGE="http://search.cpan.org/dist/${PN}/"
 SRC_URI="mirror://cpan/authors/id/O/OL/OLIVIERT/WebService/${P}.tar.gz"
-LICENSE="|| ( Artistic GPL-2 )"
+
+DESCRIPTION="Interface to the W3C CSS Validator"
 
 SLOT="0"
-KEYWORDS="amd64 x86"
-RESTRICT="nomirror"
+LICENSE="|| ( Artistic GPL-2 )"
+KEYWORDS="~amd64 ~x86"
+#SRC_TEST="do"
 
 IUSE=""
-RDEPEND="dev-lang/perl
-	>=dev-perl/SOAP-Lite-0.65
+RDEPEND=">=dev-perl/SOAP-Lite-0.65
 	dev-perl/libwww-perl
 	dev-perl/URI
 	dev-perl/Class-Accessor"
