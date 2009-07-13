@@ -1,6 +1,8 @@
-# Copyright Daniel Westermann-Clark <daniel at acceleration dot net>
+# Copyright 1999-2009 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header$
+# $Header: $
+
+EAPI=2
 
 inherit eutils rpm
 
@@ -8,24 +10,30 @@ TSM_BASE_URI="ftp://ftp.software.ibm.com/storage/tivoli-storage-management/maint
 
 DESCRIPTION="Tivoli Storage Manager (TSM) backup/archive client"
 HOMEPAGE="http://www.tivoli.com/"
-SRC_URI="${TSM_BASE_URI}/5.5.1.0-TIV-TSMBAC-LinuxX86.tar"
+SRC_URI="${TSM_BASE_URI}/5.5.1.0-TIV-TSMBAC-LinuxX86.tar
+	linguas_cs? ( ${TSM_BASE_URI}/TIVsm-msg.cs_CZ.i386.rpm )
+	linguas_de? ( ${TSM_BASE_URI}/TIVsm-msg.de_DE.i386.rpm )
+	linguas_es? ( ${TSM_BASE_URI}/TIVsm-msg.es_ES.i386.rpm )
+	linguas_fe? ( ${TSM_BASE_URI}/TIVsm-msg.fr_FR.i386.rpm )
+	linguas_it? ( ${TSM_BASE_URI}/TIVsm-msg.it_IT.i386.rpm )
+	linguas_ja? ( ${TSM_BASE_URI}/TIVsm-msg.ja_JP.i386.rpm )
+	linguas_ko? ( ${TSM_BASE_URI}/TIVsm-msg.ko_KR.i386.rpm )
+	linguas_pl? ( ${TSM_BASE_URI}/TIVsm-msg.pl_PL.i386.rpm )
+	linguas_pt_BR? ( ${TSM_BASE_URI}/TIVsm-msg.pt_BR.i386.rpm )
+	linguas_ru? ( ${TSM_BASE_URI}/TIVsm-msg.ru_RU.i386.rpm )
+	linguas_zh_CN? ( ${TSM_BASE_URI}/TIVsm-msg.zh_CN.i386.rpm )
+	linguas_zh_TW? ( ${TSM_BASE_URI}/TIVsm-msg.zh_TW.i386.rpm )"
 LICENSE="as-is"
 
 SLOT="0"
-KEYWORDS="amd64 x86"
-RESTRICT="nomirror nostrip" # Breaks libPiIMG.ss and libPiSNAP.so
+KEYWORDS="~amd64 ~x86"
+RESTRICT="strip"  # Breaks libPiIMG.ss and libPiSNAP.so
 
-IUSE=""
+IUSE="linguas_cs linguas_de linguas_es linguas_fr linguas_it linguas_ja linguas_ko linguas_pl linguas_pt_BR linguas_ru linguas_zh_CN linguas_zh_TW"
 RDEPEND="~virtual/libstdc++-3.3
 	amd64? ( app-emulation/emul-linux-x86-compat )"
 
 S="${WORKDIR}"
-
-LANGS="cs_CZ de_DE es_ES fr_FR it_IT ja_JP ko_KR pl_PL pt_BR ru_RU zh_CN zh_TW"
-for x in ${LANGS}; do
-	IUSE="${IUSE} linguas_${x}"
-	SRC_URI="${SRC_URI} linguas_${x}? ( ${TSM_BASE_URI}/TIVsm-msg.${x}.i386.rpm )"
-done
 
 TSM_DIR="/opt/tivoli"
 TSM_CLIENT_DIR="${TSM_DIR}/tsm/client"
@@ -39,11 +47,11 @@ TSM_CONFIG_DIR="/etc/tivoli"
 TSM_LOG_DIR="/var/log"
 
 pkg_setup() {
-	strip-linguas ${LANGS}
+	strip-linguas "cs de es fr it ja ko pl pt_BR ru zh_CN zh_TW"
 }
 
 src_unpack() {
-	unpack "${A}"
+	unpack ${A}
 	cd "${S}"
 
 	local files="TIVsm-BA.i386.rpm TIVsm-API.i386.rpm"
@@ -56,7 +64,6 @@ src_unpack() {
 		einfo "Unpacking ${file}..."
 		rpm_unpack "${file}" || die "Error unpacking ${file}"
 	done
-
 }
 
 src_install() {
