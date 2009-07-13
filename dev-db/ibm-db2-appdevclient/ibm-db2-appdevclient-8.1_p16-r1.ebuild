@@ -1,6 +1,8 @@
-# Copyright Daniel Westermann-Clark <daniel at acceleration dot net>
+# Copyright 1999-2009 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header$
+# $Header: $
+
+EAPI=2
 
 inherit eutils rpm
 
@@ -11,8 +13,8 @@ SRC_URI="amd64? ( ftp://ftp.software.ibm.com/ps/products/db2/fixes2/english-us/d
 LICENSE="IBM-ILNWP"
 
 SLOT="0"
-KEYWORDS="amd64 x86"
-RESTRICT="nomirror nostrip"
+KEYWORDS="~amd64 ~x86"
+RESTRICT="strip"
 
 IUSE=""
 DEPEND="sys-apps/sed"
@@ -33,7 +35,7 @@ DB2_SQL_DIR="${DB2_INSTANCE_DIR}/sqllib"
 DB2_LIB_DIR="${DB2_SQL_DIR}/lib"
 
 src_unpack() {
-	unpack "${A}"
+	unpack ${A}
 	cd "${S}"
 
 	local file
