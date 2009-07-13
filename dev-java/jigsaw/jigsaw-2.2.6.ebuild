@@ -1,6 +1,8 @@
-# Copyright Daniel Westermann-Clark <daniel at acceleration dot net>
+# Copyright 1999-2009 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header$
+# $Header: $
+
+EAPI=2
 
 inherit eutils java-pkg-2 java-ant-2
 
@@ -12,8 +14,7 @@ SRC_URI="http://jigsaw.w3.org/Distrib/${PN}_${PV}.tar.bz2"
 LICENSE="W3C"
 
 SLOT="0"
-KEYWORDS="amd64 x86"
-RESTRICT="nomirror"
+KEYWORDS="~amd64 ~x86"
 
 IUSE="doc"
 COMMON_DEPENDENCIES="dev-java/jakarta-oro:2.0
@@ -30,10 +31,7 @@ RDEPEND=">=virtual/jre-1.4
 EANT_GENTOO_CLASSPATH="jakarta-oro-2.0,jtidy,sax,servletapi-2.3,xerces-2,xp"
 EANT_DOC_TARGET="javadocs"
 
-src_unpack() {
-	unpack "${A}"
-	cd "${S}"
-
+src_prepare() {
 	epatch "${FILESDIR}/${PN}-build-classpath.patch"
 
 	java-ant_rewrite-classpath
