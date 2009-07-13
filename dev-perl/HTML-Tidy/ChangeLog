@@ -1,0 +1,10 @@
+# ChangeLog for dev-perl/HTML-Tidy
+# Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*HTML-Tidy-1.08 (13 Jul 2009)
+
+  13 Jul 2009; Daniel Westermann-Clark <dwc@pobox.com>
+  +HTML-Tidy-1.08.ebuild, +metadata.xml:
+  Add dev-perl/HTML-Tidy, dependency for www-apps/w3c-markup-validator
+
