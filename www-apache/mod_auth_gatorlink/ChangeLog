@@ -1,0 +1,8 @@
+# ChangeLog for www-apache/mod_auth_gatorlink
+# Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+  13 Jul 2009; Daniel Westermann-Clark <dwc@pobox.com>
+  mod_auth_gatorlink-2.1.ebuild, +metadata.xml:
+  Convert to EAPI=2 and add metadata.xml
+
