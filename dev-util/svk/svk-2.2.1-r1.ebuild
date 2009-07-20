@@ -53,7 +53,7 @@ RDEPEND=">=dev-util/subversion-1.3.0[perl]
 	>=dev-perl/SVN-Mirror-0.71
 	dev-perl/IO-Pager
 	dev-perl/Log-Log4perl
-	virtual/perl-Compress-Zlib
+	virtual/perl-IO-Compress
 	dev-perl/FreezeThaw
 	nls? (
 		>=dev-perl/locale-maketext-lexicon-0.62
