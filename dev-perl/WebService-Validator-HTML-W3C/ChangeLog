@@ -2,6 +2,13 @@
 # Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
 
+*WebService-Validator-HTML-W3C-0.25 (06 Aug 2009)
+
+  06 Aug 2009; Daniel Westermann-Clark <dwc@pobox.com>
+  -WebService-Validator-HTML-W3C-0.24.ebuild,
+  +WebService-Validator-HTML-W3C-0.25.ebuild:
+  Bump
+
   13 Jul 2009; Daniel Westermann-Clark <dwc@pobox.com>
   WebService-Validator-HTML-W3C-0.24.ebuild, +metadata.xml:
   Convert to EAPI=2 and add metadata.xml
