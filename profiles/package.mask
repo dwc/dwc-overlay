@@ -1,0 +1,3 @@
+# Daniel Westermann-Clark <dwc@pobox.com> (11 Jul 2009)
+# No longer being maintained; does not run on stable version of dev-util/subversion
+dev-util/svk
