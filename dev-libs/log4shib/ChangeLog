@@ -1,0 +1,10 @@
+# ChangeLog for dev-libs/log4shib
+# Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*log4shib-1.0.3 (14 Oct 2009)
+
+  14 Oct 2009; Daniel Westermann-Clark <dwc@pobox.com>
+  +log4shib-1.0.3.ebuild, +metadata.xml:
+  Add log4shib package for Shibboleth
+
