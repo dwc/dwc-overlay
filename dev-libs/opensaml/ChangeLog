@@ -1,0 +1,10 @@
+# ChangeLog for dev-libs/opensaml
+# Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*opensaml-2.2.1 (14 Oct 2009)
+
+  14 Oct 2009; Daniel Westermann-Clark <dwc@pobox.com>
+  +opensaml-2.2.1.ebuild, +metadata.xml:
+  Add opensaml package for Shibboleth
+
