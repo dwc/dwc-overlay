@@ -1,0 +1,10 @@
+# ChangeLog for dev-libs/xmltooling
+# Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*xmltooling-1.2.2 (14 Oct 2009)
+
+  14 Oct 2009; Daniel Westermann-Clark <dwc@pobox.com>
+  +xmltooling-1.2.2.ebuild, +metadata.xml:
+  Add xmltooling package for Shibboleth
+
