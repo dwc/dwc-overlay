@@ -1,0 +1,23 @@
+#!/sbin/runscript
+
+depend() {
+	before apache2
+	use net
+}
+
+start() {
+	ebegin "Starting shibd"
+	start-stop-daemon --start \
+		--pidfile /var/run/shibboleth/shibd.pid \
+		--exec /usr/sbin/shibd \
+		-- ${SHIBD_OPTS}
+	eend $?
+}
+
+stop() {
+	ebegin "Stopping shibd"
+	start-stop-daemon --stop \
+		--pidfile /var/run/shibboleth/shibd.pid \
+		--exec /usr/sbin/shibd
+	eend $?
+}

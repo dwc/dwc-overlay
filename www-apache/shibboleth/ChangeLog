@@ -1,0 +1,11 @@
+# ChangeLog for www-apache/shibboleth
+# Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*shibboleth-2.2.1 (15 Oct 2009)
+
+  15 Oct 2009; Daniel Westermann-Clark <dwc@pobox.com>
+  +files/98_mod_shib.conf, +shibboleth-2.2.1.ebuild, +files/shibd.confd,
+  +files/shibd.initd, +metadata.xml:
+  Add Shibboleth SP package for shibd and Apache 2.2 mod_shib
+

@@ -1,0 +1,4 @@
+# /etc/conf.d/shibd
+
+# Options to pass to the shibd process
+SHIBD_OPTS=""
