@@ -51,6 +51,9 @@ src_install() {
 	# Install shibd et al
 	emake NOKEYGEN=1 DESTDIR="${D}" install || die "emake install failed"
 
+	# Remove useless libtool archives (also, make install breaks them by removing libshibsp.la and libshibsp-lite.la)
+	find "${D}" -name '*.la' -delete || die "error removing libtool archives"
+
 	# Install the Apache module and related files for Gentoo
 	apache-module_src_install
 
