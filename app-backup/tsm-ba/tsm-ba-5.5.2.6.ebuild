@@ -4,13 +4,17 @@
 
 EAPI=2
 
-inherit eutils rpm
+inherit eutils rpm versionator
 
-TSM_BASE_URI="ftp://ftp.software.ibm.com/storage/tivoli-storage-management/maintenance/client/v5r5/Linux/LinuxX86/v551"
+TSM_VERSION=$(get_version_component_range 1)
+TSM_RELEASE=$(get_version_component_range 2)
+TSM_LEVEL=$(get_version_component_range 3)
+TSM_TYPE="patches"
+TSM_BASE_URI="ftp://ftp.software.ibm.com/storage/tivoli-storage-management/${TSM_TYPE}/client/v${TSM_VERSION}r${TSM_RELEASE}/Linux/LinuxX86/v${TSM_VERSION}${TSM_RELEASE}${TSM_LEVEL}"
 
 DESCRIPTION="Tivoli Storage Manager (TSM) backup/archive client"
 HOMEPAGE="http://www.tivoli.com/"
-SRC_URI="${TSM_BASE_URI}/5.5.1.0-TIV-TSMBAC-LinuxX86.tar
+SRC_URI="${TSM_BASE_URI}/${PV}-TIV-TSMBAC-LinuxX86.tar
 	linguas_cs? ( ${TSM_BASE_URI}/TIVsm-msg.cs_CZ.i386.rpm )
 	linguas_de? ( ${TSM_BASE_URI}/TIVsm-msg.de_DE.i386.rpm )
 	linguas_es? ( ${TSM_BASE_URI}/TIVsm-msg.es_ES.i386.rpm )
@@ -54,16 +58,12 @@ src_unpack() {
 	unpack ${A}
 	cd "${S}"
 
-	local files="TIVsm-BA.i386.rpm TIVsm-API.i386.rpm"
+	local files="./TIVsm-BA.i386.rpm ./TIVsm-API.i386.rpm"
 	if use amd64; then
-		files="${files} TIVsm-API64.i386.rpm"
+		files="${files} ./TIVsm-API64.rpm"
 	fi
 
-	local file
-	for file in ${files}; do
-		einfo "Unpacking ${file}..."
-		rpm_unpack "${file}" || die "Error unpacking ${file}"
-	done
+	rpm_unpack ${files}
 }
 
 src_install() {
