@@ -17,8 +17,8 @@ KEYWORDS="~amd64 ~x86"
 IUSE="doc odbc"
 RDEPEND=">=dev-libs/xerces-c-2.8[-iconv]
 	>=dev-libs/xml-security-c-1.4
-	>=dev-libs/xmltooling-1.3
-	>=dev-libs/opensaml-2.3
+	=dev-libs/xmltooling-1.3*
+	=dev-libs/opensaml-2.3*
 	>=dev-libs/log4shib-1.0.4
 	dev-libs/openssl
 	odbc? ( dev-db/unixODBC )"
@@ -44,7 +44,7 @@ src_configure() {
 
 src_compile() {
 	# Override the apache-module src_compile to build shibd et al
-	emake || die "email failed"
+	emake || die "emake failed"
 }
 
 src_install() {
