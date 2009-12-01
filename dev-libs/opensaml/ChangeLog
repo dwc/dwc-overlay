@@ -2,6 +2,11 @@
 # Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
 
+*opensaml-2.3 (01 Dec 2009)
+
+  01 Dec 2009; Daniel Westermann-Clark <dwc@pobox.com> +opensaml-2.3.ebuild:
+  Bump dev-libs/opensaml to 2.3
+
   01 Dec 2009; Daniel Westermann-Clark <dwc@pobox.com>
   opensaml-2.2.1.ebuild:
   Update SRC_URI for dev-libs/opensaml since upstream moved it
