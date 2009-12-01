@@ -8,7 +8,7 @@ inherit apache-module
 
 DESCRIPTION="Apache module and agent for the open-source authentication system"
 HOMEPAGE="http://shibboleth.internet2.edu/"
-SRC_URI="http://shibboleth.internet2.edu/downloads/${PN}/cppsp/${PV}/${PN}-sp-${PV}.tar.gz"
+SRC_URI="http://shibboleth.internet2.edu/downloads/${PN}/cppsp/archive/${PV}/${PN}-sp-${PV}.tar.gz"
 LICENSE="Apache-2.0"
 
 SLOT="0"
