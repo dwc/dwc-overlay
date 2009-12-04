@@ -2,6 +2,12 @@
 # Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
 
+*shibboleth-2.3.1 (04 Dec 2009)
+
+  04 Dec 2009; Daniel Westermann-Clark <dwc@pobox.com>
+  -shibboleth-2.3.ebuild, +shibboleth-2.3.1.ebuild:
+  Bump www-apache/shibboleth to 2.3.1
+
 *shibboleth-2.3 (01 Dec 2009)
 
   01 Dec 2009; Daniel Westermann-Clark <dwc@pobox.com>
