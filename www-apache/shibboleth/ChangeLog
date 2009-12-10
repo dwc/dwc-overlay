@@ -2,6 +2,11 @@
 # Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
 
+  10 Dec 2009; Daniel Westermann-Clark <dwc@pobox.com>
+  shibboleth-2.3.1.ebuild:
+  Use elibtoolize to reverse the LDFLAGS, preventing libtool from relinking
+  against old, installed libraries
+
 *shibboleth-2.3.1 (04 Dec 2009)
 
   04 Dec 2009; Daniel Westermann-Clark <dwc@pobox.com>

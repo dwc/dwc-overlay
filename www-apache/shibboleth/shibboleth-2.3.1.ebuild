@@ -4,7 +4,7 @@
 
 EAPI=2
 
-inherit apache-module autotools
+inherit apache-module libtool
 
 DESCRIPTION="Apache module and agent for the open-source authentication system"
 HOMEPAGE="http://shibboleth.internet2.edu/"
@@ -32,7 +32,7 @@ APACHE2_MOD_DEFINE="SHIBBOLETH"
 need_apache2_2
 
 src_prepare() {
-	eautoreconf
+	elibtoolize --reverse-deps
 }
 
 src_configure() {
