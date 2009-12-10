@@ -10,7 +10,7 @@ start() {
 	start-stop-daemon --start \
 		--pidfile /var/run/shibboleth/shibd.pid \
 		--exec /usr/sbin/shibd \
-		-- ${SHIBD_OPTS}
+		-- -p /var/run/shibboleth/shibd.pid ${SHIBD_OPTS}
 	eend $?
 }
 
