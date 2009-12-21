@@ -8,7 +8,6 @@ depend() {
 start() {
 	ebegin "Starting shibd"
 	start-stop-daemon --start \
-		--pidfile /var/run/shibboleth/shibd.pid \
 		--exec /usr/sbin/shibd \
 		-- -p /var/run/shibboleth/shibd.pid ${SHIBD_OPTS}
 	eend $?

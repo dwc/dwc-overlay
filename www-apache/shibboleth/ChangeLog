@@ -2,6 +2,10 @@
 # Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
 
+  21 Dec 2009; Daniel Westermann-Clark <dwc@pobox.com> files/shibd.initd:
+  Don't check the pidfile on start, since shibd doesn't clean it up when it
+  dies
+
   10 Dec 2009; Daniel Westermann-Clark <dwc@pobox.com> files/shibd.initd:
   Pass -p to shibd to generate a pidfile more reliably
 
