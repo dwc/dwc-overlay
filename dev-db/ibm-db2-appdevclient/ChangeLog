@@ -1,6 +1,11 @@
 # ChangeLog for dev-db/ibm-db2-appdevclient
-# Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
+
+  13 Jan 2010; Daniel Westermann-Clark <dwc@pobox.com>
+  ibm-db2-appdevclient-8.1_p16-r1.ebuild:
+  Update rpm_unpack usage to match new API and move part of src_unpack into
+  a src_prepare
 
   13 Jul 2009; Daniel Westermann-Clark <dwc@pobox.com>
   ibm-db2-appdevclient-8.1_p16-r1.ebuild, +metadata.xml:

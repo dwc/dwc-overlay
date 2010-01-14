@@ -1,4 +1,4 @@
-# Copyright 1999-2009 Gentoo Foundation
+# Copyright 1999-2010 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -38,13 +38,12 @@ src_unpack() {
 	unpack ${A}
 	cd "${S}"
 
-	local file
-	for file in *.rpm; do
-		einfo "Unpacking ${file}..."
-		rpm_unpack "${file}" || die "Error unpacking ${file}"
-	done
+	rpm_unpack ./*.rpm
+}
 
-	cd "${DB2_DIR}/instance"
+src_prepare() {
+	cd "${S}/${DB2_DIR}/instance"
+
 	for file in db2idbm db2imigr db2istop db2iutil; do
 		if [ -f "${file}" ]; then
 			einfo "Fixing tail usage in ${file}..."
