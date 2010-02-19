@@ -1,6 +1,12 @@
 # ChangeLog for dev-perl/DBD-DB2
-# Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
+
+*DBD-DB2-1.78 (19 Feb 2010)
+
+  19 Feb 2010; Daniel Westermann-Clark <dwc@pobox.com> -DBD-DB2-1.71.ebuild,
+  +DBD-DB2-1.78.ebuild:
+  Bump dev-perl/DBD-DB2 to 1.78
 
 *DBD-DB2-1.71 (13 Jul 2009)
 
