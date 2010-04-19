@@ -1,0 +1,10 @@
+# ChangeLog for dev-python/trac-sql-helper
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*trac-sql-helper-9999 (19 Apr 2010)
+
+  19 Apr 2010; Daniel Westermann-Clark <dwc@pobox.com>
+  +trac-sql-helper-9999.ebuild, +metadata.xml:
+  Add Trac SQL helper script
+
