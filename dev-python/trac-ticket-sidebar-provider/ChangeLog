@@ -1,0 +1,10 @@
+# ChangeLog for dev-python/trac-ticket-sidebar-provider
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*trac-ticket-sidebar-provider-9999 (19 Apr 2010)
+
+  19 Apr 2010; Daniel Westermann-Clark <dwc@pobox.com>
+  +trac-ticket-sidebar-provider-9999.ebuild, +metadata.xml:
+  Add Trac ticket sidebar provider plugin
+
