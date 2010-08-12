@@ -1,6 +1,10 @@
 # ChangeLog for dev-perl/SGML-Parser-OpenSP
-# Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
+
+  12 Aug 2010; Daniel Westermann-Clark <dwc@pobox.com>
+  SGML-Parser-OpenSP-0.994.ebuild:
+  Add app-text/opensp dependency that should have been in RDEPEND all along
 
 *SGML-Parser-OpenSP-0.994 (13 Jul 2009)
 
