@@ -1,4 +1,4 @@
-# Copyright 1999-2009 Gentoo Foundation
+# Copyright 1999-2010 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -20,18 +20,19 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 RDEPEND=">=dev-lang/perl-5.8.0
 	>=virtual/perl-CGI-2.81
-	>=dev-perl/config-general-2.31
+	>=dev-perl/config-general-2.32
+	virtual/perl-Encode
 	dev-perl/Encode-HanExtra
 	virtual/perl-File-Spec
 	>=dev-perl/HTML-Encoding-0.52
-	>=dev-perl/HTML-Parser-3.24
+	>=dev-perl/HTML-Parser-3.60
 	>=dev-perl/HTML-Template-2.6
+	>=dev-perl/JSON-2.00
 	>=dev-perl/libwww-perl-5.804
 	dev-perl/Net-IP
-	dev-perl/SGML-Parser-OpenSP
-	dev-perl/String-Approx
+	>=dev-perl/SGML-Parser-OpenSP-0.991
 	dev-perl/URI
-	dev-perl/XML-LibXML
+	>=dev-perl/XML-LibXML-1.70
 	dev-perl/Encode-JIS2K
 	dev-perl/HTML-Tidy"
 
