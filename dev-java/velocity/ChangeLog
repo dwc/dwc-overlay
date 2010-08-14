@@ -1,0 +1,10 @@
+# ChangeLog for dev-java/velocity
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*velocity-1.6.4 (14 Aug 2010)
+
+  14 Aug 2010; Daniel Westermann-Clark <dwc@pobox.com>
+  +velocity-1.6.4.ebuild, +metadata.xml:
+  Bump dev-java/velocity to 1.6.4
+
