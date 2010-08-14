@@ -2,6 +2,11 @@
 # Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
 
+  14 Aug 2010; Daniel Westermann-Clark <dwc@pobox.com>
+  trac-sql-helper-9999.ebuild:
+  Force >=www-apps/trac-0.12 (see http://trac-hacks.org/ticket/7262 for mire
+  information)
+
 *trac-sql-helper-9999 (19 Apr 2010)
 
   19 Apr 2010; Daniel Westermann-Clark <dwc@pobox.com>

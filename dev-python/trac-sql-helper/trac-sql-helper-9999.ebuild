@@ -6,7 +6,8 @@ EAPI="2"
 
 # Checkout from Subversion because trac-hacks.org does not provide a versioned SRC_URI
 MY_PN="tracsqlhelperscript"
-ESVN_REPO_URI="http://trac-hacks.org/svn/${MY_PN}/anyrelease/"
+TRAC_VERSION="0.12"
+ESVN_REPO_URI="http://trac-hacks.org/svn/${MY_PN}/${TRAC_VERSION}/"
 
 inherit distutils subversion
 
@@ -18,7 +19,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
 IUSE=""
-RDEPEND=">=www-apps/trac-0.11"
+RDEPEND=">=www-apps/trac-${TRAC_VERSION}"
 DEPEND="${RDEPEND}"
 
 S="${WORKDIR}"
