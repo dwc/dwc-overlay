@@ -1,6 +1,12 @@
 # ChangeLog for www-apps/w3c-css-validator
-# Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
+
+*w3c-css-validator-9999 (14 Aug 2010)
+
+  14 Aug 2010; Daniel Westermann-Clark <dwc@pobox.com>
+  +w3c-css-validator-9999.ebuild, -w3c-css-validator-20080630.ebuild:
+  Bump www-apps/w3c-css-validator; now a CVS ebuild
 
   13 Jul 2009; Daniel Westermann-Clark <dwc@pobox.com>
   w3c-css-validator-20080630.ebuild, +metadata.xml:

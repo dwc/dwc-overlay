@@ -1,0 +1,11 @@
+Once you've installed the WAR file in your servlet container, configure your
+Web server using something like the following:
+
+JkMount /${PN}/validator ajp13
+
+<Directory ${VHOST_HTDOCSDIR}/${PN}>
+	Options IncludesNoExec Indexes MultiViews
+	AddHandler server-parsed .html
+	AddCharset utf-8 .html
+	DirectoryIndex validator.html
+</Directory>
