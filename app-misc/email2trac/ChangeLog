@@ -1,0 +1,10 @@
+# ChangeLog for app-misc/email2trac
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*email2trac-1.6.0 (15 Aug 2010)
+
+  15 Aug 2010; Daniel Westermann-Clark <dwc@pobox.com>
+  +email2trac-1.6.0.ebuild, +metadata.xml:
+  Bump app-misc/email2trac to 1.6.0 for Trac 0.12
+
