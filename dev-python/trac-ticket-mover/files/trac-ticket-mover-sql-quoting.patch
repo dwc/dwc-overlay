@@ -2,16 +2,7 @@ Index: 0.11/ticketmoverplugin/ticketmover.py
 ===================================================================
 --- 0.11/ticketmoverplugin/ticketmover.py	(revision 8362)
 +++ 0.11/ticketmoverplugin/ticketmover.py	(working copy)
-@@ -18,6 +18,8 @@
- from trac.web.api import ITemplateStreamFilter
- from trac.ticket import Ticket
- from trac.ticket.api import ITicketActionController
-+from trac.attachment import Attachment
-+from trac.resource import Resource
- from tracsqlhelper import get_all_dict
- from tracsqlhelper import insert_row_from_dict
- 
-@@ -188,7 +190,7 @@
+@@ -188,7 +188,7 @@
  
          # copy the changelog and attachment DBs
          for table, _id in tables.items():
