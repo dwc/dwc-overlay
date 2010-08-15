@@ -25,3 +25,9 @@ RDEPEND=">=www-apps/trac-${TRAC_VERSION}
 DEPEND="${RDEPEND}"
 
 S="${WORKDIR}"
+
+src_prepare() {
+	subversion_src_prepare
+	epatch "${FILESDIR}"/trac-ticket-mover-sql-quoting.patch
+	distutils_src_prepare
+}
