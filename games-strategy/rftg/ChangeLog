@@ -2,6 +2,9 @@
 # Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
 
+  22 Aug 2010; Daniel Westermann-Clark <dwc@pobox.com> rftg-0.6.1.ebuild:
+  Add missing pkg-config dependency
+
 *rftg-0.6.1 (04 Apr 2010)
 
   04 Apr 2010; Daniel Westermann-Clark <dwc@pobox.com> +rftg-0.6.1.ebuild,

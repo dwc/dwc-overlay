@@ -14,6 +14,8 @@ KEYWORDS="~amd64 ~x86"
 
 IUSE=""
 RDEPEND=">=x11-libs/gtk+-2.16"
+DEPEND="${RDEPEND}
+	dev-util/pkgconfig"
 
 src_compile() {
 	emake || die "emake failed"
