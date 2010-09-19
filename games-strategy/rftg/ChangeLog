@@ -2,6 +2,12 @@
 # Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
 
+*rftg-0.7.5 (19 Sep 2010)
+
+  19 Sep 2010; Daniel Westermann-Clark <dwc@pobox.com> -rftg-0.7.4.ebuild,
+  +rftg-0.7.5.ebuild:
+  Bump games-strategy/rftg to 0.7.5
+
 *rftg-0.7.4 (22 Aug 2010)
 
   22 Aug 2010; Daniel Westermann-Clark <dwc@pobox.com> +rftg-0.7.4.ebuild:
