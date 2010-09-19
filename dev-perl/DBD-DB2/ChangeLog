@@ -2,6 +2,12 @@
 # Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
 
+*DBD-DB2-1.79 (19 Sep 2010)
+
+  19 Sep 2010; Daniel Westermann-Clark <dwc@pobox.com> -DBD-DB2-1.78.ebuild,
+  +DBD-DB2-1.79.ebuild:
+  Bump dev-perl/DBD-DB2 to 1.79
+
 *DBD-DB2-1.78 (19 Feb 2010)
 
   19 Feb 2010; Daniel Westermann-Clark <dwc@pobox.com> -DBD-DB2-1.71.ebuild,
