@@ -2,6 +2,12 @@
 # Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
 
+*HTML-Tidy-1.54 (19 Sep 2010)
+
+  19 Sep 2010; Daniel Westermann-Clark <dwc@pobox.com>
+  -HTML-Tidy-1.52.ebuild, +HTML-Tidy-1.54.ebuild:
+  Bump dev-perl/HTML-Tidy to 1.54
+
 *HTML-Tidy-1.52 (12 Aug 2010)
 
   12 Aug 2010; Daniel Westermann-Clark <dwc@pobox.com>
