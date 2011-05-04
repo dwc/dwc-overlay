@@ -1,0 +1,10 @@
+# ChangeLog for www-apache/mod_auth_pam
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*mod_auth_pam-1.1.1 (04 May 2011)
+
+  04 May 2011; Daniel Westermann-Clark <dwc@pobox.com>
+  +files/10_mod_auth_pam.conf, +mod_auth_pam-1.1.1.ebuild, +metadata.xml:
+  Add Debian package for mod_auth_pam
+
