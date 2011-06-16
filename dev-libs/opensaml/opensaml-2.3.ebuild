@@ -1,12 +1,12 @@
-# Copyright 1999-2009 Gentoo Foundation
+# Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
 EAPI=2
 
 DESCRIPTION="C++ libraries for interacting with Security Assertion Markup Language (SAML)"
-HOMEPAGE="https://spaces.internet2.edu/display/OpenSAML/Home"
-SRC_URI="http://shibboleth.internet2.edu/downloads/${PN}/cpp/${PV}/${P}.tar.gz"
+HOMEPAGE="https://wiki.shibboleth.net/confluence/display/OpenSAML/Home"
+SRC_URI="http://www.shibboleth.net/downloads/c++-${PN}/archive/${PV}/${P}.tar.gz"
 LICENSE="Apache-2.0"
 
 SLOT="0"

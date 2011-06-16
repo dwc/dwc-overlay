@@ -2,6 +2,10 @@
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
 
+  16 Jun 2011; Daniel Westermann-Clark <dwc@pobox.com> opensaml-2.2.1.ebuild,
+  opensaml-2.3.ebuild:
+  Update SRC_URI and HOMEPAGE
+
 *opensaml-2.4.1 (16 Jun 2011)
 
   16 Jun 2011; Daniel Westermann-Clark <dwc@pobox.com> +opensaml-2.4.1.ebuild:
