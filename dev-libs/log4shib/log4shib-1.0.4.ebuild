@@ -1,12 +1,12 @@
-# Copyright 1999-2009 Gentoo Foundation
+# Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
 EAPI=2
 
 DESCRIPTION="log4cpp for Shibboleth"
-HOMEPAGE="https://spaces.internet2.edu/display/OpenSAML/log4shib"
-SRC_URI="http://shibboleth.internet2.edu/downloads/${PN}/${PV}/${P}.tar.gz"
+HOMEPAGE="https://wiki.shibboleth.net/confluence/display/OpenSAML/log4shib"
+SRC_URI="http://www.shibboleth.net/downloads/${PN}/${PV}/${P}.tar.gz"
 LICENSE="LGPL-2.1"
 
 SLOT="0"

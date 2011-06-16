@@ -1,6 +1,10 @@
 # ChangeLog for dev-libs/log4shib
-# Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
+
+  16 Jun 2011; Daniel Westermann-Clark <dwc@pobox.com> log4shib-1.0.3.ebuild,
+  log4shib-1.0.4.ebuild:
+  Update SRC_URI and HOMEPAGE
 
 *log4shib-1.0.4 (01 Dec 2009)
 
