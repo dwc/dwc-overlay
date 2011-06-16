@@ -1,6 +1,11 @@
 # ChangeLog for dev-libs/opensaml
-# Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
+
+*opensaml-2.4.1 (16 Jun 2011)
+
+  16 Jun 2011; Daniel Westermann-Clark <dwc@pobox.com> +opensaml-2.4.1.ebuild:
+  Bump dev-libs/opensaml to 2.4.1
 
 *opensaml-2.3 (01 Dec 2009)
 
