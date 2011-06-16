@@ -1,4 +1,4 @@
-# Copyright 1999-2009 Gentoo Foundation
+# Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -8,7 +8,7 @@ inherit apache-module libtool
 
 DESCRIPTION="Apache module and agent for the open-source authentication system"
 HOMEPAGE="http://shibboleth.internet2.edu/"
-SRC_URI="http://shibboleth.internet2.edu/downloads/${PN}/cppsp/${PV}/${PN}-sp-${PV}.tar.gz"
+SRC_URI="http://www.shibboleth.net/downloads/service-provider/archive/${PV}/${PN}-sp-${PV}.tar.gz"
 LICENSE="Apache-2.0"
 
 SLOT="0"
