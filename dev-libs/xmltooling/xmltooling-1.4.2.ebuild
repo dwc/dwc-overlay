@@ -6,7 +6,7 @@ EAPI=2
 
 DESCRIPTION="A higher level interface to XML processing, particularly in light of signing and encryption"
 HOMEPAGE="https://wiki.shibboleth.net/confluence/display/OpenSAML/XMLTooling-C"
-SRC_URI="http://www.shibboleth.net/downloads/c++-opensaml/2.4.1/${P}.tar.gz"
+SRC_URI="http://www.shibboleth.net/downloads/c++-opensaml/2.4.3/${P}.tar.gz"
 LICENSE="Apache-2.0"
 
 SLOT="0"
