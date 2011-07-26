@@ -2,6 +2,14 @@
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
 
+*opensaml-2.4.3 (26 Jul 2011)
+
+  26 Jul 2011; Daniel Westermann-Clark <dwc@pobox.com> -opensaml-2.4.1.ebuild,
+  +opensaml-2.4.3.ebuild:
+  Bump dev-libs/opensaml to 2.4.3 to fix security issue:
+
+  http://shibboleth.internet2.edu/secadv/secadv_20110725.txt
+
   16 Jun 2011; Daniel Westermann-Clark <dwc@pobox.com> opensaml-2.2.1.ebuild,
   opensaml-2.3.ebuild:
   Update SRC_URI and HOMEPAGE
