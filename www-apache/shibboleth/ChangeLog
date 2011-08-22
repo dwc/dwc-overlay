@@ -2,6 +2,12 @@
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
 
+*shibboleth-2.4.3 (22 Aug 2011)
+
+  22 Aug 2011; Daniel Westermann-Clark <dwc@pobox.com>
+  -shibboleth-2.4.2.ebuild, +shibboleth-2.4.3.ebuild:
+  Bump www-apache/shibboleth to 2.4.3
+
   16 Jun 2011; Daniel Westermann-Clark <dwc@pobox.com> shibboleth-2.2.1.ebuild,
   shibboleth-2.3.1.ebuild:
   Update SRC_URI and HOMEPAGE
